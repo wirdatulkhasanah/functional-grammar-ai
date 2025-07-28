@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Home() {
   const [text, setText] = useState("");
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<Record<string, any> | null>(null);
 
   const handleSubmit = async () => {
     const res = await fetch("/api/analyze", {
