@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="p-6 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Functional Grammar AI</h1>
+      <h1 className="text-2xl font-bold mb-4">Functional Grammar Analyzer</h1>
       <textarea
         className="w-full h-28 border p-2 mb-2"
         value={text}
