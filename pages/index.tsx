@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 export default function Home() {
   const [text, setText] = useState("");
   const [result, setResult] = useState<unknown>(null);
@@ -13,7 +12,6 @@ export default function Home() {
     const data = await res.json();
     setResult(data);
   };
-
   return (
     <main className="p-6 max-w-2xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Functional Grammar Analyzer</h1>
@@ -29,7 +27,6 @@ export default function Home() {
       >
         Analyze
       </button>
-
       {result && (
         <div className="mt-6 bg-gray-100 p-4 rounded">
           <pre>{JSON.stringify(result, null, 2)}</pre>
